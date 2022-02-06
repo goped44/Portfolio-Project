@@ -7,11 +7,13 @@
     <title>My Portfolio | Home</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="banner">
         
-        <div class="navbar">
+        <div class="navbar" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
             <nav>
                 <h3>Port<span>folio</span></h3>
                 <ul>
@@ -19,10 +21,11 @@
                         <li><a href="https://www.apple.com">About</a></li>
                         <li><a href="https://www.apple.com">Skills</a></li>
                         <li><a href="https://www.apple.com">Projects</a></li>
-                        <li><a href="https://www.apple.com">Contact</a></li>
+                        <li><a href="">Contact</a></li>
                 </ul>
             </nav>
         </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
 
         <div class="row">
 
@@ -36,9 +39,20 @@
             <div class="col-2">
                 <img src="photos/man.png"> 
             </div>
-
-
         </div>
     </div>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+}
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+}
+    </script>
+
+
 </body>
 </html>

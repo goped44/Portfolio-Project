@@ -91,8 +91,58 @@ nav ul li a{
     margin-left: 35%;
 }
 .col-2 img{
-    width: 52%;
-    margin-top: 40px;
+    width: 50%;
     transform: translateX(300px);
     margin-right: 20%;
+    margin-top: 2%;
+}
+
+@media(max-width: 700px){
+    .banner{
+        background-size: cover;
+    }
+    .col-2 img{
+        display: none;
+    }
+    .col-1{
+        text-align: center;
+        margin: 0 3%;
+        position: absolute;
+        top: 30%;
+    }
+    .navbar{
+        position: absolute;
+        background: #b47c2d;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    .navbar h3{
+        transform: translateX(-380px);
+        margin-top: -30px;
+    }
+    nav ul li{
+        display: block;
+        text-align: left;
+        margin-top: 18px;
+    }
+    nav ul li a{
+        font-size: 30px;
+    }
+    .fa{
+        color: #fff;
+    }
+    .fa.fa-times{
+        font-size: 28px;
+        margin: 12px 8px;
+    }
+    .fa.fa-bars{
+        font-size: 30px;
+        padding-left: 88%;
+        margin-top: 32px;
+    }
 }
